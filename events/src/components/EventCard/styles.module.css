@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content is spaced out */
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+  height: 100%; /* Makes sure all cards have the same height */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Slightly enlarges the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increases shadow for depth effect */
+}
+
+.title {
+  margin: 0 0 10px;
+}
+
+.date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.description {
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eventLink {
+  display: inline-block;
+  flex: 0 0 22%;
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}

@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+    networks:
+      - app-network
+
+  events:
+    build:
+      context: ./events
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      - VITE_API_BASE_URL=http://api:8080
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

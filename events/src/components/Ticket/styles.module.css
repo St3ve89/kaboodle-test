@@ -1,0 +1,40 @@
+.labelDanger {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+.labelAvailable {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.ticketSelector {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.soldOut {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.ticketLabels,
+.ticketCounter {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticketLabel,
+.ticketLabelDesc,
+.displayPriceValue,
+.price,
+.currency,
+.amount,
+.displayPriceBookingFee {
+  margin-right: 5px;
+}

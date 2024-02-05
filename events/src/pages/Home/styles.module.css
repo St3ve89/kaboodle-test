@@ -1,0 +1,26 @@
+.formContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.ticketSection {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: space-between;
+}
