@@ -37,7 +37,7 @@ cd <project-directory>
 docker-compose up --build
 ```
 
-- This command starts the backend API and frontend services, as well as any other services defined in the `docker-compose.yml` file.
+- This command starts the backend API and frontend services.
 
 3. Access the application:
    - Frontend: http://localhost:3000
